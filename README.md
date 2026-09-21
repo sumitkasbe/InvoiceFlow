@@ -234,11 +234,13 @@ Create a test account using the Register page.
 
 Example test account:
 
-    Name: Test User
-    Email: test@example.com
-    Password: Test@12345
+    Name: Sumit
+    Email: sumit@test.com
+    Password: 123456
 
 These are example credentials for creating a local test account. They are not pre-seeded credentials and are not connected to a real account.
+
+
 
 ---
 
@@ -348,15 +350,33 @@ These features can be added in future versions.
 The application includes the following main screens:
 
 - Login
-- Registration
-- Dashboard
-- Client Management
-- Invoice List
-- Create Invoice
-- Edit Invoice
-- Invoice Details
+<img width="700" height="790" alt="Screenshot 2026-09-21 140608" src="https://github.com/user-attachments/assets/9b713319-6284-497b-a75e-5a97bbde003a" />
 
-Screenshots or a demo video can be added to this section if required.
+- Registration
+<img width="700" height="790" alt="Screenshot 2026-09-21 140628" src="https://github.com/user-attachments/assets/5413a79d-9589-434b-9ff7-d9efcaf08cf0" />
+  
+- Dashboard
+<img width="1482" height="870" alt="Screenshot 2026-09-21 140737" src="https://github.com/user-attachments/assets/6d965be4-54fc-4e06-96c9-efe78fd7c0e9" />
+
+- Client Management
+<img width="1447" height="882" alt="Screenshot 2026-09-21 140813" src="https://github.com/user-attachments/assets/5a211cfe-0a68-4a77-bd4d-39b403f5ebfd" />
+
+- Invoice List
+<img width="1461" height="872" alt="Screenshot 2026-09-21 140831" src="https://github.com/user-attachments/assets/235ddfae-737a-4b2e-a0bc-4f28f5251588" />
+
+- Create Invoice
+<img width="758" height="792" alt="Screenshot 2026-09-21 140906" src="https://github.com/user-attachments/assets/108a4874-f6f3-4623-b452-544e8a5f250c" />
+
+- Edit Invoice
+<img width="720" height="777" alt="image" src="https://github.com/user-attachments/assets/e7b6314d-38d3-4828-8466-82b586b1f44b" />
+
+- Invoice Details
+<img width="745" height="592" alt="Screenshot 2026-09-21 140928" src="https://github.com/user-attachments/assets/81e39792-b31c-4538-801d-a0a984b884f2" />
+
+- Add Clients
+<img width="742" height="870" alt="Screenshot 2026-09-21 140949" src="https://github.com/user-attachments/assets/ce406334-e812-496a-9b6e-334690dd2c15" />
+
+
 
 ---
 
