@@ -184,14 +184,14 @@ Create the following file:
 Add:
 
     PORT=8000
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret
+    MONGO_URI=mongodb+srv://invoiceUser:invoice6355@cluster0.fx5rfpn.mongodb.net/invoiceflow?appName=Cluster0
+    JWT_SECRET=invoicesupersecretekeyishere
 
 ### Environment Variable Description
 
 | Variable | Description |
 |---|---|
-| `PORT` | Port number used by the Express server |
+| `PORT` | Port number used by the Express server 8000 |
 | `MONGO_URI` | MongoDB connection string |
 | `JWT_SECRET` | Secret key used to generate and verify JWT tokens |
 
