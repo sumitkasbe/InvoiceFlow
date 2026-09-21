@@ -42,78 +42,97 @@ function Register() {
     };
 
     return (
-        <div>
-            <h1>InvoiceFlow</h1>
+        <div className="auth-page">
 
-            <h2>Register</h2>
+            <div className="auth-card">
 
-            <form onSubmit={handleSubmit}>
+                <h1>InvoiceFlow</h1>
 
-                <div>
-                    <label>Name</label>
+                <h2>Register</h2>
 
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(event) =>
-                            setName(event.target.value)
-                        }
-                        placeholder="Enter your name"
-                        required
-                    />
-                </div>
+                <p className="auth-subtitle">
+                    Create an account to manage your invoices
+                </p>
 
-                <div>
-                    <label>Email</label>
+                {error && (
+                    <p className="auth-error">
+                        {error}
+                    </p>
+                )}
 
-                    <input
-                        type="email"
-                        value={email}
-                        onChange={(event) =>
-                            setEmail(event.target.value)
-                        }
-                        placeholder="Enter your email"
-                        required
-                    />
-                </div>
+                {success && (
+                    <p className="auth-success">
+                        {success}
+                    </p>
+                )}
 
-                <div>
-                    <label>Password</label>
+                <form onSubmit={handleSubmit}>
 
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(event) =>
-                            setPassword(event.target.value)
-                        }
-                        placeholder="Enter your password"
-                        required
-                    />
-                </div>
+                    <div className="form-group">
+                        <label>Name</label>
 
-                <button
-                    type="submit"
-                    disabled={loading}
-                >
-                    {loading ? "Registering..." : "Register"}
-                </button>
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={(event) =>
+                                setName(event.target.value)
+                            }
+                            placeholder="Enter your name"
+                            required
+                        />
+                    </div>
 
-            </form>
+                    <div className="form-group">
+                        <label>Email</label>
 
-            <p>
-                Already have an account?{" "}
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(event) =>
+                                setEmail(event.target.value)
+                            }
+                            placeholder="Enter your email"
+                            required
+                        />
+                    </div>
 
-                <button
-                    type="button"
-                    onClick={() => navigate("/login")}
-                >
-                    Login
-                </button>
-            </p>
+                    <div className="form-group">
+                        <label>Password</label>
 
-            {error && <p>{error}</p>}
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(event) =>
+                                setPassword(event.target.value)
+                            }
+                            placeholder="Create a password"
+                            required
+                        />
+                    </div>
 
-            {success && <p>{success}</p>}
+                    <button
+                        type="submit"
+                        className="auth-button"
+                        disabled={loading}
+                    >
+                        {loading ? "Registering..." : "Register"}
+                    </button>
+
+                </form>
+
+                <p className="auth-switch">
+                    Already have an account?{" "}
+
+                    <button
+                        type="button"
+                        onClick={() => navigate("/login")}
+                    >
+                        Login
+                    </button>
+                </p>
+
+            </div>
+
         </div>
     );
 }

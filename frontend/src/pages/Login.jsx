@@ -45,64 +45,83 @@ function Login() {
     };
 
     return (
-        <div>
-            <h1>InvoiceFlow</h1>
+        <div className="auth-page">
 
-            <h2>Login</h2>
+            <div className="auth-card">
 
-            <form onSubmit={handleSubmit}>
+                <h1>InvoiceFlow</h1>
 
-                <div>
-                    <label>Email</label>
+                <h2>Login</h2>
 
-                    <input
-                        type="email"
-                        value={email}
-                        onChange={(event) =>
-                            setEmail(event.target.value)
-                        }
-                        placeholder="Enter your email"
-                        required
-                    />
-                </div>
+                <p className="auth-subtitle">
+                    Login to manage your clients and invoices
+                </p>
 
-                <div>
-                    <label>Password</label>
+                {error && (
+                    <p className="auth-error">
+                        {error}
+                    </p>
+                )}
 
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(event) =>
-                            setPassword(event.target.value)
-                        }
-                        placeholder="Enter your password"
-                        required
-                    />
-                </div>
+                {success && (
+                    <p className="auth-success">
+                        {success}
+                    </p>
+                )}
 
-                <button
-                    type="submit"
-                    disabled={loading}
-                >
-                    {loading ? "Logging in..." : "Login"}
-                </button>
+                <form onSubmit={handleSubmit}>
 
-            </form>
+                    <div className="form-group">
+                        <label>Email</label>
 
-            <p>
-                Don't have an account?{" "}
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(event) =>
+                                setEmail(event.target.value)
+                            }
+                            placeholder="Enter your email"
+                            required
+                        />
+                    </div>
 
-                <button
-                    type="button"
-                    onClick={() => navigate("/register")}
-                >
-                    Register
-                </button>
-            </p>
+                    <div className="form-group">
+                        <label>Password</label>
 
-            {error && <p>{error}</p>}
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(event) =>
+                                setPassword(event.target.value)
+                            }
+                            placeholder="Enter your password"
+                            required
+                        />
+                    </div>
 
-            {success && <p>{success}</p>}
+                    <button
+                        type="submit"
+                        className="auth-button"
+                        disabled={loading}
+                    >
+                        {loading ? "Logging in..." : "Login"}
+                    </button>
+
+                </form>
+
+                <p className="auth-switch">
+                    Don't have an account?{" "}
+
+                    <button
+                        type="button"
+                        onClick={() => navigate("/register")}
+                    >
+                        Register
+                    </button>
+                </p>
+
+            </div>
+
         </div>
     );
 }
