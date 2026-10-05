@@ -180,13 +180,7 @@ The backend uses environment variables for database configuration and authentica
 Create the following file:
 
     backend/.env
-
-Add:
-
-    PORT=8000
-    MONGO_URI=mongodb+srv://invoiceUser:invoice6355@cluster0.fx5rfpn.mongodb.net/invoiceflow?appName=Cluster0
-    JWT_SECRET=invoicesupersecretekeyishere
-
+    
 ### Environment Variable Description
 
 | Variable | Description |
